@@ -1,6 +1,7 @@
 """Surveillant AO vétérinaires — pipeline sans Excel."""
 import os
 import json
+import html
 import hashlib
 import smtplib
 import datetime
@@ -16,9 +17,23 @@ except ImportError:
 from collectors import worldbank, za_etenders, sadc, africavet, bad, mali_dgmp, armp_cameroun, ungm, ufsa_mozambique, nest_tanzania
 import filtre
 import dashboard
+import verif_liens
 
 FICHIER_VUS = "vus.json"
 FICHIER_AO  = "ao.json"
+FICHIER_DERNIER_RUN = "dernier_run.txt"
+
+def deja_lance_aujourdhui():
+    """True si un run a déjà réussi aujourd'hui (évite les doublons si le
+    LaunchAgent se déclenche plusieurs fois/jour pour rattraper un 20h manqué)."""
+    if not os.path.exists(FICHIER_DERNIER_RUN):
+        return False
+    with open(FICHIER_DERNIER_RUN, encoding="utf-8") as f:
+        return f.read().strip() == str(datetime.date.today())
+
+def marquer_run_fait():
+    with open(FICHIER_DERNIER_RUN, "w", encoding="utf-8") as f:
+        f.write(str(datetime.date.today()))
 
 def id_hash(rec):
     return hashlib.sha1(f"{rec['source']}|{rec['ext_id']}".encode()).hexdigest()[:16]
@@ -56,25 +71,30 @@ def envoyer_email(nouveaux):
     if not dst:
         print("[mail] MAIL_TO non configuré")
         return
+    def e(v):
+        return html.escape(str(v)) if v else ""
+
     blocs = []
     for r in nouveaux:
         blocs.append(
             f'<tr>'
-            f'<td style="padding:6px;border:1px solid #ccc">{r["date_pub"] or "—"}</td>'
-            f'<td style="padding:6px;border:1px solid #ccc">{r["pays"]}</td>'
-            f'<td style="padding:6px;border:1px solid #ccc">{r["titre"][:120]}</td>'
-            f'<td style="padding:6px;border:1px solid #ccc">{r["date_limite"] or "Inconnu"}</td>'
-            f'<td style="padding:6px;border:1px solid #ccc">{r["financement"]}</td>'
-            f'<td style="padding:6px;border:1px solid #ccc"><a href="{r["lien"]}">Voir</a></td>'
+            f'<td style="padding:6px;border:1px solid #ccc">{e(r["date_pub"]) or "—"}</td>'
+            f'<td style="padding:6px;border:1px solid #ccc">{e(r["pays"])}</td>'
+            f'<td style="padding:6px;border:1px solid #ccc">{e(r["organisme"])}</td>'
+            f'<td style="padding:6px;border:1px solid #ccc">{e(r["titre"][:120])}</td>'
+            f'<td style="padding:6px;border:1px solid #ccc">{e(r["date_limite"]) or "Inconnu"}</td>'
+            f'<td style="padding:6px;border:1px solid #ccc">{e(r["financement"])}</td>'
+            f'<td style="padding:6px;border:1px solid #ccc"><a href="{e(r["lien"])}">Voir</a></td>'
             f'</tr>'
         )
-    html = (
+    corps_html = (
         f'<h2 style="color:#1F4E79">Veille AO vétérinaires — {len(nouveaux)} nouvelle(s)</h2>'
         f'<p>Date : {datetime.date.today()}</p>'
         '<table style="border-collapse:collapse;font-family:Arial;font-size:13px;width:100%">'
         '<tr style="background:#1F4E79;color:white">'
         '<th style="padding:8px;border:1px solid #ccc">Date pub.</th>'
         '<th style="padding:8px;border:1px solid #ccc">Pays</th>'
+        '<th style="padding:8px;border:1px solid #ccc">Organisme</th>'
         '<th style="padding:8px;border:1px solid #ccc">Titre</th>'
         '<th style="padding:8px;border:1px solid #ccc">Échéance</th>'
         '<th style="padding:8px;border:1px solid #ccc">Financement</th>'
@@ -87,7 +107,7 @@ def envoyer_email(nouveaux):
     msg["Subject"] = f"[Veille AO] {len(nouveaux)} nouvelle(s) — {datetime.date.today()}"
     msg["From"] = src
     msg["To"] = dst
-    msg.attach(MIMEText(html, "html", "utf-8"))
+    msg.attach(MIMEText(corps_html, "html", "utf-8"))
     try:
         with smtplib.SMTP(host, port) as s:
             s.starttls()
@@ -98,6 +118,10 @@ def envoyer_email(nouveaux):
         print(f"[mail] erreur : {e}")
 
 def main():
+    if deja_lance_aujourdhui():
+        print(f"[skip] déjà lancé aujourd'hui ({datetime.date.today()}) — rien à faire.")
+        return
+
     vus = charger_vus()
     ao_list = charger_ao()
 
@@ -141,6 +165,8 @@ def main():
     print(f"[filtre] {len(nouveaux)} nouvelle(s) AO pertinente(s)")
 
     if nouveaux:
+        print("[vérif liens] contrôle des nouveaux liens...")
+        verif_liens.verifier(nouveaux)
         ao_list = nouveaux + ao_list  # les plus récentes en premier
         sauver_ao(ao_list)
         sauver_vus(vus)
@@ -148,6 +174,8 @@ def main():
         envoyer_email(nouveaux)
     else:
         print("Rien de nouveau.")
+
+    marquer_run_fait()
 
 if __name__ == "__main__":
     main()

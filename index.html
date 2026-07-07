@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Veille AO Vétérinaires — Lobs</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f4f6f9; color: #333; }
+  .header { background: #1F4E79; color: #fff; padding: 24px 32px; display:flex; justify-content:space-between; align-items:center; }
+  .header h1 { font-size: 22px; font-weight: 700; }
+  .header small { opacity: .7; font-size: 13px; }
+  .stats { display: flex; gap: 16px; padding: 20px 32px; flex-wrap: wrap; }
+  .stat { background: #fff; border-radius: 10px; padding: 16px 24px; box-shadow: 0 1px 4px rgba(0,0,0,.08); min-width: 140px; }
+  .stat .n { font-size: 32px; font-weight: 700; color: #1F4E79; }
+  .stat .l { font-size: 12px; color: #6c757d; margin-top: 2px; }
+  .sources { padding: 0 32px 16px; display:flex; flex-wrap:wrap; gap:6px; }
+  .filters { padding: 0 32px 12px; display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
+  .filters input { padding: 8px 14px; border: 1px solid #ced4da; border-radius: 6px; font-size: 14px; width: 280px; }
+  .filters select { padding: 8px 12px; border: 1px solid #ced4da; border-radius: 6px; font-size: 14px; }
+  .table-wrap { padding: 0 32px 32px; overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,.08); overflow: hidden; }
+  thead tr { background: #1F4E79; color: #fff; }
+  thead th { padding: 12px 8px; text-align: left; font-size: 13px; font-weight: 600; white-space: nowrap; }
+  tbody tr:hover { background: #f8f9fa; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>Veille AO Vétérinaires — Lobs International Health</h1>
+    <small>Mise à jour : 02/07/2026 10:40</small>
+  </div>
+  <div style="text-align:right">
+    <div style="font-size:28px;font-weight:700">136</div>
+    <div style="opacity:.7;font-size:13px">AO totales</div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="n">136</div><div class="l">Total AO</div></div>
+  <div class="stat"><div class="n">5</div><div class="l">Sources actives</div></div>
+</div>
+
+<div class="sources"><span style="background:#1F4E79;color:#fff;padding:4px 12px;border-radius:20px;font-size:13px;margin:2px">banque_mondiale <b>(75)</b></span><span style="background:#1F4E79;color:#fff;padding:4px 12px;border-radius:20px;font-size:13px;margin:2px">ungm <b>(54)</b></span><span style="background:#1F4E79;color:#fff;padding:4px 12px;border-radius:20px;font-size:13px;margin:2px">mali_dgmp <b>(4)</b></span><span style="background:#1F4E79;color:#fff;padding:4px 12px;border-radius:20px;font-size:13px;margin:2px">africavet <b>(2)</b></span><span style="background:#1F4E79;color:#fff;padding:4px 12px;border-radius:20px;font-size:13px;margin:2px">nest_tanzania <b>(1)</b></span></div>
+
+<div class="filters">
+  <input type="text" id="search" placeholder="Filtrer par pays, titre, mots-clés..." oninput="filtrer()">
+  <select id="sel-source" onchange="filtrer()">
+    <option value="">Toutes les sources</option>
+    <option value="africavet">africavet</option><option value="banque_mondiale">banque_mondiale</option><option value="mali_dgmp">mali_dgmp</option><option value="nest_tanzania">nest_tanzania</option><option value="ungm">ungm</option>
+  </select>
+  <span id="count" style="color:#6c757d;font-size:13px"></span>
+</div>
+
+<div class="table-wrap">
+<table id="table-ao">
+  <thead>
+    <tr>
+      <th>Date pub.</th>
+      <th>Échéance</th>
+      <th>Pays / Zone</th>
+      <th>Titre / Organisme</th>
+      <th>Mots-clés</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody id="tbody">
+    
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">2026-06-24</td>
+          <td style="padding:10px 8px;white-space:nowrap">2026-07-06</td>
+          <td style="padding:10px 8px"><b>Tanzania</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://nest.go.tz/tenders/published-tenders?search=X4%2F2025%2F2026%2FG%2F59" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Supply and installation of automatic vaccine filling machines for TVI-Kibaha</a>
+            <br><small style="color:#6c757d">TANZANIA VETERINARY LABORATORY AGENCY</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">nest_tanzania</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">18-Jun-2026</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00452023" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition des antiparasitaires internes (albendasoles et levamisoles)</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project II</small>
+          </td>
+          <td style="padding:10px 8px"><small>antiparasitaire</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">16-Jun-2026</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Mozambique</b><br><small style="color:#6c757d">australe</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00451456" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Procurement of essential veterinary supplies for canine unit clinics</a>
+            <br><small style="color:#6c757d">Northern Mozambique Rural Resilience Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">20-May-2026</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00446151" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de 7000 0000 de doses de vaccins PPR</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project II</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">19-May-2026</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Chad</b><br><small style="color:#6c757d">centrale</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00307488" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Achat des Intrants Vétérinaires (Vaccins) aux profits des neuves (09) provinces du Tchad.</a>
+            <br><small style="color:#6c757d">Health System Performance Strengthening Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, vétérinaire</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">07-May-2026</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00443732" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition du vaccin 2.6 Millions de doses de vaccins PPCB pour la CV 2025/2026 (T1/44)</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project II</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, ppcb</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">05-May-2026</td>
+          <td style="padding:10px 8px;white-space:nowrap">15-May-2026</td>
+          <td style="padding:10px 8px"><b>Ghana</b><br><small style="color:#6c757d">ouest</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/299881" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">ITB:  Procurement of PPR Vaccines and PPEs under GCP /GHA/043/NOR Project.</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">02-May-2026</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00442496" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Purchase of Veterinary medicines</a>
+            <br><small style="color:#6c757d">Health Security Program in Western and Central Africa</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">29-Apr-2026</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Eastern and Southern Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00441795" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">SUPPLY AND DELIVERY OF VETERINARY VACCINES, DRUGS AND ANIMAL HEALTH PRODUCTS</a>
+            <br><small style="color:#6c757d">Food Systems Resilience Program for Eastern and Southern Africa (Phase 3) FSRP</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, veterinary, animal health</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">2026-04-27</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.africavet.com/supply-delivery-testing-commissioning-of-ppr-vaccines-to-the-select-economic-community-of-west-african-states-ecowas/" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Supply, Delivery, Testing & Commissioning of PPR Vaccines to the Select Economic Community of West African States (ECOWA</a>
+            <br><small style="color:#6c757d">AfricaVET</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">africavet</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">2026-04-27</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.africavet.com/supply-delivery-testing-commissioning-of-ppr-vaccines-to-select-southern-african-development-community-sadc-member-states/" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Supply, Delivery, Testing & Commissioning of PPR Vaccines to Select Southern African Development Community (SADC) Member</a>
+            <br><small style="color:#6c757d">AfricaVET</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">africavet</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">26-Apr-2026</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00441018" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de 25 000 000 de doses de vaccins contre la peste des petits ruminants (PPR) et 7 500 000 doses de vaccins c</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project II</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, peste des petits ruminants, ppcb, péripneumonie, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">26-Apr-2026</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00441017" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de 25 000 000 de doses de vaccins contre la peste des petits ruminants (PPR) et 7 500 000 doses de vaccins c</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project II</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, peste des petits ruminants, ppcb, péripneumonie, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">26-Apr-2026</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00441015" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de 25 000 000 de doses de vaccins contre la peste des petits ruminants (PPR) et 7 500 000 doses de vaccins c</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project II</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, peste des petits ruminants, ppcb, péripneumonie, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">26-Apr-2026</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00441016" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de 25 000 000 de doses de vaccins contre la peste des petits ruminants (PPR) et 7 500 000 doses de vaccins c</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project II</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, peste des petits ruminants, ppcb, péripneumonie, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">04-Apr-2026</td>
+          <td style="padding:10px 8px;white-space:nowrap">2026-05-20T00:00:00Z</td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00436700" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition des vaccins PPR (11 Millions de doses) campagne 2026/2027</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project - Mauritania</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">13-Mar-2026</td>
+          <td style="padding:10px 8px;white-space:nowrap">26-Mar-2026</td>
+          <td style="padding:10px 8px"><b>Ethiopia</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/293832" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Procurement of Veterinary Drugs- DPU Addis Ababa Ethiopia</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">26-Feb-2026</td>
+          <td style="padding:10px 8px;white-space:nowrap">07-Mar-2026</td>
+          <td style="padding:10px 8px"><b>Sudan</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/292291" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">ITB for Supply of veterinary drugs and animal health products</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary, animal health</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">17-Feb-2026</td>
+          <td style="padding:10px 8px;white-space:nowrap">2026-02-17T00:00:00Z</td>
+          <td style="padding:10px 8px"><b>Madagascar</b><br><small style="color:#6c757d">australe</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00427399" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquérir des Vaccin Rabique ( animal)</a>
+            <br><small style="color:#6c757d">HEALTH PROJECT COORDINATION UNIT - MINISTRY OF HEALTH</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">10-Feb-2026</td>
+          <td style="padding:10px 8px;white-space:nowrap">23-Feb-2026</td>
+          <td style="padding:10px 8px"><b>Ethiopia</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/290815" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Procurement of Veterinary Drugs- under OSRO/ETH/150/CHA project</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">04-Feb-2026</td>
+          <td style="padding:10px 8px;white-space:nowrap">15-Feb-2026</td>
+          <td style="padding:10px 8px"><b>Somalia</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/290269" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Procurement of Veterinary Drugs (PR 25/286)</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">09-Jan-2026</td>
+          <td style="padding:10px 8px;white-space:nowrap">21-Jan-2026</td>
+          <td style="padding:10px 8px"><b>Ethiopia</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/288398" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Procurement of Veterinary Drugs to be delivered to FAO Office in Addis Ababa</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">12-Nov-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00408311" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de 7 000 000 de doses de vaccins PPR au profit du Ministère de l'élevage</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project II</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">23-Oct-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap">29-Oct-2025</td>
+          <td style="padding:10px 8px"><b>Ethiopia</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/282385" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">RE TENDER- Procurement of Veterinary Supplies and Equipment</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">24-Sep-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00380100" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Antiparasitaires internes (carbendazoles, levamizoles)</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project II</small>
+          </td>
+          <td style="padding:10px 8px"><small>antiparasitaire</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">16-Sep-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00378666" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition des vaccins et diluants PPR et PPCB</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project II</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, ppcb, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">11-Sep-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap">25-Sep-2025</td>
+          <td style="padding:10px 8px"><b>Sudan</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/278215" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">ITB for Veterinary Vaccines</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">10-Sep-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap">23-Sep-2025</td>
+          <td style="padding:10px 8px"><b>South Sudan</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/278123" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Invitation to Bid for the Procurement of Veterinary drugs in Juba (South  Sudan)</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">09-Sep-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap">22-Sep-2025</td>
+          <td style="padding:10px 8px"><b>Ethiopia</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/277981" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Procurement of Veterinary Supplies and Equipment</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">25-Aug-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap">08-Sep-2025</td>
+          <td style="padding:10px 8px"><b>Uganda</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/276440" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Supply of Veterinary Drugs</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">20-Aug-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap">29-Aug-2025</td>
+          <td style="padding:10px 8px"><b>Ethiopia</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/276021" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">RFQ for the Supply and Delivery of veterinary drugs and antiseptics, Ministry of Agriculture Addis Ababa, Ethiopia</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">15-Aug-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap">01-Sep-2025</td>
+          <td style="padding:10px 8px"><b>Uganda</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/275671" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Procurement of Livestock vaccines against Transboundary Animal Diseases (TADs)</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">11-Aug-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00372855" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de vaccin pour la campagne de vaccination 2024-2025 (marché en lot unique)</a>
+            <br><small style="color:#6c757d">West Africa Food System Resilience Program (FSRP)</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, vaccination, campagne de vaccination</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">05-Aug-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Ethiopia</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00371974" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Procurement of Veterinary Drugs, Vaccine & Equipment’s for Emergency response of Anthrax outbreak response</a>
+            <br><small style="color:#6c757d">Lowlands Livelihood Resilience Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">05-Aug-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Ethiopia</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00371970" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Procurement of Veterinary Drugs, Vaccine & Equipment’s for Emergency response of Anthrax outbreak response</a>
+            <br><small style="color:#6c757d">Lowlands Livelihood Resilience Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">05-Aug-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Ethiopia</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00371981" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Procurement of Veterinary Drugs, Vaccine & Equipment’s for Emergency response of Anthrax outbreak response</a>
+            <br><small style="color:#6c757d">Lowlands Livelihood Resilience Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">05-Aug-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Ethiopia</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00371945" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Procurement of Veterinary Drugs, Vaccine & Equipment’s for Emergency response of Anthrax outbreak response</a>
+            <br><small style="color:#6c757d">Lowlands Livelihood Resilience Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">04-Aug-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Ethiopia</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00371777" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Procurement of Veterinary Drugs, Vaccine & Equipment’s for Emergency response of Anthrax outbreak response</a>
+            <br><small style="color:#6c757d">Lowlands Livelihood Resilience Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">04-Aug-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Ethiopia</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00371786" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Procurement of Veterinary Drugs, Vaccine & Equipment’s for Emergency response of Anthrax outbreak response</a>
+            <br><small style="color:#6c757d">Lowlands Livelihood Resilience Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">04-Aug-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Ethiopia</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00371785" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Procurement of Veterinary Drugs, Vaccine & Equipment’s for Emergency response of Anthrax outbreak response</a>
+            <br><small style="color:#6c757d">Lowlands Livelihood Resilience Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">04-Aug-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Ethiopia</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00371787" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Procurement of Veterinary Drugs, Vaccine & Equipment’s for Emergency response of Anthrax outbreak response</a>
+            <br><small style="color:#6c757d">Lowlands Livelihood Resilience Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">26-Jun-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap">04-Jul-2025</td>
+          <td style="padding:10px 8px"><b>Ethiopia</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/270675" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">CANCELLED RFQ for the Supply and Delivery of veterinary drugs and antiseptics, Ministry of Agriculture Addis Ababa, Ethi</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">02-Jun-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap">13-Jun-2025</td>
+          <td style="padding:10px 8px"><b>Ethiopia</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/268504" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Procurement of Veterinary Drug</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">01-Jun-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap">18-Jun-2025</td>
+          <td style="padding:10px 8px"><b>Sudan</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/268428" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">ITB -procurement of Veterinary Vaccines</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">29-May-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00360465" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de vint deux millions(22 050 000) doses de vaccins PPR +diluants au profit de la DGSV</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project II</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">28-May-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00360166" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de douze millions (12 000 000) de doses de vaccins PPCB + Diluants ..</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project II</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, ppcb</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">30-Apr-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap">08-May-2025</td>
+          <td style="padding:10px 8px"><b>Rwanda</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/265557" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Procurement of Chicken, Poultry Feed Equipment and  veterinary drugs and vaccines for Rwanda (Retender)</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">22-Apr-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap">2025-05-22T00:00:00Z</td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00353365" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition des vaccins et diluants PPR et PPCB</a>
+            <br><small style="color:#6c757d">REGIONAL SAHEL PASTORALISM SUPPORT PROJECT II - NIGER</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, ppcb, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">17-Apr-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap">02-May-2025</td>
+          <td style="padding:10px 8px"><b>South Sudan</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/264664" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">PROCUREMENT OF VETERINARY VACCINES TO BE DELIVERED TO THE FAO CENTRAL WAREHOUSE IN JUBA SOUTH SUDAN</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">28-Mar-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap">10-Apr-2025</td>
+          <td style="padding:10px 8px"><b>Burundi</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/262972" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Fourniture des kits vétérinaires /supply of veterinary kits</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>vétérinaire, veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">06-Mar-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00343706" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de vaccins contre la fièvre aphteuse, la fièvre de la vallée du Rift et la maladie de Newcastle (en 3 lots)</a>
+            <br><small style="color:#6c757d">WEST AFRICA FOOD SYSTEM RESILIENCE PROGRAM (FSRP) PHASE 3</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, fièvre aphteuse, newcastle</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">06-Mar-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00343712" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de vaccins contre la fièvre aphteuse, la fièvre de la vallée du Rift et la maladie de Newcastle (en 3 lots)</a>
+            <br><small style="color:#6c757d">WEST AFRICA FOOD SYSTEM RESILIENCE PROGRAM (FSRP) PHASE 3</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, fièvre aphteuse, newcastle</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">06-Mar-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00343713" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de vaccins contre la fièvre aphteuse, la fièvre de la vallée du Rift et la maladie de Newcastle (en 3 lots)</a>
+            <br><small style="color:#6c757d">WEST AFRICA FOOD SYSTEM RESILIENCE PROGRAM (FSRP) PHASE 3</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, fièvre aphteuse, newcastle</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">20-Feb-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap">26-Feb-2025</td>
+          <td style="padding:10px 8px"><b>Ethiopia</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/260079" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Procurement of  Veterinary Drug and Equipment</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">13-Feb-2025</td>
+          <td style="padding:10px 8px;white-space:nowrap">03-Mar-2025</td>
+          <td style="padding:10px 8px"><b>Rwanda</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/259500" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Procurement of Chicken, Poultry Feed Equipment and  veterinary drugs and vaccines for Rwanda</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">18-Dec-2024</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00329400" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de 42 000 000 doses de vaccins contre la PPR et de 23 000 000 doses de vaccins contre la PPCB</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project II</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, ppcb, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">16-Dec-2024</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Eastern and Southern Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00328812" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Deltaguard- Pour on -500ml Litres 1200 Albendazole 10% Litres 940 Pen strep 100ml Vials 300 Multivitamin (vitaboast) 100</a>
+            <br><small style="color:#6c757d">Emergency Locust Response Program</small>
+          </td>
+          <td style="padding:10px 8px"><small>ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">04-Dec-2024</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00326444" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition d'antiparasitaires internes (carbendazoles & levamisole)</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project II</small>
+          </td>
+          <td style="padding:10px 8px"><small>antiparasitaire</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">17-Nov-2024</td>
+          <td style="padding:10px 8px;white-space:nowrap">28-Nov-2024</td>
+          <td style="padding:10px 8px"><b>South Sudan</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/253273" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Invitation to Bid for the procurement of veterinary drugs</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">15-Nov-2024</td>
+          <td style="padding:10px 8px;white-space:nowrap">25-Nov-2024</td>
+          <td style="padding:10px 8px"><b>Somalia</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/253257" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Procurement of Veterinary Drugs (PR 24/343)</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">09-Oct-2024</td>
+          <td style="padding:10px 8px;white-space:nowrap">2024-11-21T00:00:00Z</td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00314840" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de douze millions (12 000 000) de doses de vaccins PPCB + Diluants ..</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project - Chad</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, ppcb</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">09-Oct-2024</td>
+          <td style="padding:10px 8px;white-space:nowrap">2024-11-19T00:00:00Z</td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00314819" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de vint deux millions(22 050 000) doses de vaccins PPR +diluants au profit de la DGSV</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project - Chad</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">16-Sep-2024</td>
+          <td style="padding:10px 8px;white-space:nowrap">20-Sep-2024</td>
+          <td style="padding:10px 8px"><b>Angola</b><br><small style="color:#6c757d">australe</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/246764" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">ITB 2024 109 Procurement of Veterinary Kits (Drugs)</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">15-Sep-2024</td>
+          <td style="padding:10px 8px;white-space:nowrap">20-Sep-2024</td>
+          <td style="padding:10px 8px"><b>Angola</b><br><small style="color:#6c757d">australe</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/246737" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">ITB 2024 107 Procurement of Veterinary Kits (Non-Drugs)</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">23-Jul-2024</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Burkina Faso</b><br><small style="color:#6c757d">ouest</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00301784" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de vaccins au profit de la DGSV et du CPAVI (3 lots)</a>
+            <br><small style="color:#6c757d">Burkina Faso Livestock Resilience and Competitiveness Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">23-Jul-2024</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Burkina Faso</b><br><small style="color:#6c757d">ouest</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00301754" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de vaccins au profit de la DGSV et du CPAVI (3 lots)</a>
+            <br><small style="color:#6c757d">Burkina Faso Livestock Resilience and Competitiveness Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">23-Jul-2024</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Burkina Faso</b><br><small style="color:#6c757d">ouest</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00301755" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de vaccins au profit de la DGSV et du CPAVI (3 lots)</a>
+            <br><small style="color:#6c757d">Burkina Faso Livestock Resilience and Competitiveness Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">25-Jun-2024</td>
+          <td style="padding:10px 8px;white-space:nowrap">2024-07-10T00:00:00Z</td>
+          <td style="padding:10px 8px"><b>Eastern and Southern Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00297634" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Procurement of Livestock Vaccination supplies CCPP and PPR for MoLFR FGS and FMS</a>
+            <br><small style="color:#6c757d">Ministry of Agriculture and Irrigation</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccination, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">21-Jun-2024</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Eastern and Southern Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00297076" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition des vaccins contre la Peste des Petits Ruminants(PPR) auprès de BOTSWANA VACCINE INSTITUTE</a>
+            <br><small style="color:#6c757d">AFR RI-Regional Great Lakes Integrated Agriculture Development Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, peste des petits ruminants, vaccine, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">13-Jun-2024</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00295575" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de 5 500 000 doses de vaccins contre la PPR et 4 500 000 doses de vaccins contre la PPCB en 2023</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project II</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, ppcb, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">13-Jun-2024</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00295551" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de 5 500 000 doses de vaccins contre la PPR et 4 500 000 doses de vaccins contre la PPCB en 2023</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project II</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, ppcb, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">10-Jun-2024</td>
+          <td style="padding:10px 8px;white-space:nowrap">12-Jun-2024</td>
+          <td style="padding:10px 8px"><b>Kenya</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/237236" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">BAFO 2024/202 Procurement of Lumpy Skin Disease Veterinary Vaccines</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, veterinary, lumpy skin disease</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">02-Jun-2024</td>
+          <td style="padding:10px 8px;white-space:nowrap">20-Jun-2024</td>
+          <td style="padding:10px 8px"><b>Mozambique</b><br><small style="color:#6c757d">australe</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/236449" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Medical and veterinary supplies</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">2024-05-23</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Mali</b><br><small style="color:#6c757d">ouest</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.dgmp.gouv.ml/sites/default/files/DATA_IN/165322_AAO_491243.docx" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Achat de 80 000 doses de vaccin aftovac</a>
+            <br><small style="color:#6c757d">MINISTERE DE L'ELEVAGE ET DE LA PECHE</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">mali_dgmp</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">07-May-2024</td>
+          <td style="padding:10px 8px;white-space:nowrap">10-May-2024</td>
+          <td style="padding:10px 8px"><b>Kenya</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/233676" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">2024/202 Procurement of Lumpy Skin Disease Veterinary Vaccines</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, veterinary, lumpy skin disease</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">23-Apr-2024</td>
+          <td style="padding:10px 8px;white-space:nowrap">13-May-2024</td>
+          <td style="padding:10px 8px"><b>Burundi</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/232433" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Fourniture des kits vétérinaires bovins /supply of cattle veterinary kits</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>vétérinaire, veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">06-Mar-2024</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Eastern and Southern Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00277679" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition des vaccins contre la Brucellose auprès de Laboratoire Vétérinaire Central de Kinshasa(LABOVET)</a>
+            <br><small style="color:#6c757d">AFR RI-Regional Great Lakes Integrated Agriculture Development Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, vétérinaire, brucellose</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">11-Jan-2024</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Eastern and Southern Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00267554" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Purchasing of vaccines, CCPP vaccines 100005, SGP Vaccines 250000. Veterinary equipments will be provided by Veterinary </a>
+            <br><small style="color:#6c757d">Emergency Locust Response Program</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">10-Jan-2024</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Eastern and Southern Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00267292" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">PROCUREMENT OF CONTAGIOUS BOVINE PLEURO PNEUMONIA VACCINES AND OTHER VETERINARY SUPPLIES TO NINE WARDS UNDER ELRP AND SI</a>
+            <br><small style="color:#6c757d">Emergency Locust Response Program</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">10-Jan-2024</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Mali</b><br><small style="color:#6c757d">ouest</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00267409" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de vaccins en appui à la lutte contre la PPCB</a>
+            <br><small style="color:#6c757d">Mali Livestock Sector Development Support Project (PADEL-M)</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, ppcb</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">04-Jan-2024</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Mali</b><br><small style="color:#6c757d">ouest</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00266564" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de vaccins contre la maladie de Newcastle et contre la fièvre aphteuse en deux (2) lots distincts</a>
+            <br><small style="color:#6c757d">Mali Livestock Sector Development Support Project (PADEL-M)</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, fièvre aphteuse, newcastle</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">04-Jan-2024</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Mali</b><br><small style="color:#6c757d">ouest</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00266555" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de vaccins contre la maladie de Newcastle et contre la fièvre aphteuse en deux (2) lots distincts</a>
+            <br><small style="color:#6c757d">Mali Livestock Sector Development Support Project (PADEL-M)</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, fièvre aphteuse, newcastle</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">13-Dec-2023</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Mali</b><br><small style="color:#6c757d">ouest</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00263006" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de 2 000 000 de doses de vaccins contre la maladie de Newcastle</a>
+            <br><small style="color:#6c757d">Mali Livestock Sector Development Support Project (PADEL-M)</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, newcastle</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">20-Nov-2023</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00258631" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de six millions trois cent vingt mille (6 320 000) doses de vaccins PPCB</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project II</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, ppcb</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">27-Oct-2023</td>
+          <td style="padding:10px 8px;white-space:nowrap">13-Nov-2023</td>
+          <td style="padding:10px 8px"><b>South Sudan</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/218186" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">PR 8014514-Supply and Delivery of Veterinary Vaccines for FAO South Sudan</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">13-Sep-2023</td>
+          <td style="padding:10px 8px;white-space:nowrap">2023-09-13T00:00:00Z</td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00247173" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition des vaccins PPR et Diluants</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project - Chad</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">2023-09-08</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Mali</b><br><small style="color:#6c757d">ouest</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.dgmp.gouv.ml/sites/default/files/DATA_IN/146322_AAO_439801.docx" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Achat de vaccin contre la fièvre aphteuse pour la DNSV</a>
+            <br><small style="color:#6c757d">MINISTERE DU DEVELOPPEMENT RURAL</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, fièvre aphteuse</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">mali_dgmp</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">04-Sep-2023</td>
+          <td style="padding:10px 8px;white-space:nowrap">21-Sep-2023</td>
+          <td style="padding:10px 8px"><b>Angola</b><br><small style="color:#6c757d">australe</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/212347" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Re-tender Procurement of Veterinary Kit for FAO Angola</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">21-Jul-2023</td>
+          <td style="padding:10px 8px;white-space:nowrap">07-Aug-2023</td>
+          <td style="padding:10px 8px"><b>Angola</b><br><small style="color:#6c757d">australe</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/207673" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Procurement of Veterinary Kit to FAO Angola - Re-tender</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">19-Jul-2023</td>
+          <td style="padding:10px 8px;white-space:nowrap">03-Aug-2023</td>
+          <td style="padding:10px 8px"><b>Ethiopia</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/207485" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Procurement of Veterinary Supplies and Equipment  for Afar , Amhara, Oromia, Somali, SNNP, Sidama and Tigray regions</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">12-Jul-2023</td>
+          <td style="padding:10px 8px;white-space:nowrap">27-Jul-2023</td>
+          <td style="padding:10px 8px"><b>Ethiopia</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/206684" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">CANCELLED-procurement of Veterinary Supplies and Equipment</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">2023-06-23</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Mali</b><br><small style="color:#6c757d">ouest</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.dgmp.gouv.ml/?q=node/71" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">lAcquisition de  vaccins contre la maladie de Newcastle et contre la fièvre aphteuse au compte du PADEL-M en deux (2) l</a>
+            <br><small style="color:#6c757d">Projet d'Appui au Développement de l'Elevage au Mali (PADEM)</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, fièvre aphteuse, newcastle</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">mali_dgmp</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">24-May-2023</td>
+          <td style="padding:10px 8px;white-space:nowrap">2023-06-29T00:00:00Z</td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00228858" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de six millions trois cent vingt mille (6 320 000) doses de vaccins PPCB</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project - Chad</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, ppcb</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">18-May-2023</td>
+          <td style="padding:10px 8px;white-space:nowrap">24-May-2023</td>
+          <td style="padding:10px 8px"><b>Angola</b><br><small style="color:#6c757d">australe</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/201062" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Re-tender Procurement of Veterinary Kit to FAO Angola</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">08-Apr-2023</td>
+          <td style="padding:10px 8px;white-space:nowrap">2023-04-09T00:00:00Z</td>
+          <td style="padding:10px 8px"><b>Niger</b><br><small style="color:#6c757d">ouest</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00222662" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquistion de vaccin contre la maladie de Newcastle</a>
+            <br><small style="color:#6c757d">AGRICULTURAL AND LIVESTOCK TRANSFORMATION PROJECT</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, newcastle</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">05-Apr-2023</td>
+          <td style="padding:10px 8px;white-space:nowrap">17-Apr-2023</td>
+          <td style="padding:10px 8px"><b>Mozambique</b><br><small style="color:#6c757d">australe</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/196863" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">GCP/MOZ/126/USA - Procurement of   Eggs, Feed for Chickens & Other Veterinary Supplies</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">28-Mar-2023</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Niger</b><br><small style="color:#6c757d">ouest</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00220877" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquissions de 7.000.000 doses de vaccins contre la Péri Pneumonie Contagieuse des Bovidés (PPCB) et 22.000.000 doses de</a>
+            <br><small style="color:#6c757d">AGRICULTURAL AND LIVESTOCK TRANSFORMATION PROJECT</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, peste des petits ruminants, ppcb, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">17-Mar-2023</td>
+          <td style="padding:10px 8px;white-space:nowrap">29-Mar-2023</td>
+          <td style="padding:10px 8px"><b>Lesotho</b><br><small style="color:#6c757d">australe</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/195098" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Supply and Delivery of 1000 vials (10 -20/vial) of Lumpy Skin Disease (LSD) Vaccine to Maseru Lesotho</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, lumpy skin disease</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">23-Feb-2023</td>
+          <td style="padding:10px 8px;white-space:nowrap">08-Mar-2023</td>
+          <td style="padding:10px 8px"><b>South Sudan</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/193028" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">SUPPLY OF VETERINARY VACCINE</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">07-Feb-2023</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00213305" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de 7000 000 de doses de vaccins et diluants contre la peste de petits ruminants (PPR) .</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project II</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">11-Jan-2023</td>
+          <td style="padding:10px 8px;white-space:nowrap">31-Jan-2023</td>
+          <td style="padding:10px 8px"><b>Chad</b><br><small style="color:#6c757d">centrale</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/189809" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Pour l'achat de vaccins vétérinaires (Procurement of veterinary vaccines) - ITB≠001/FAOTD/2023</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, vétérinaire, vaccine, veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">20-Dec-2022</td>
+          <td style="padding:10px 8px;white-space:nowrap">03-Jan-2023</td>
+          <td style="padding:10px 8px"><b>Somalia</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/189029" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">PROCURMENT COMMUNITY ANIMAL HEALTH KITS  -PR 22/327</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>animal health</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">14-Dec-2022</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Cameroon</b><br><small style="color:#6c757d">centrale</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00207358" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Fourniture de vaccins pour le contrôle de la PPR dans les zones à risque (SW, NW, EN, NO, AD, ES)</a>
+            <br><small style="color:#6c757d">Livestock Development Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">24-Oct-2022</td>
+          <td style="padding:10px 8px;white-space:nowrap">07-Nov-2022</td>
+          <td style="padding:10px 8px"><b>South Sudan</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/185310" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Invitation to Bid for the procurement of veterinary vaccines for FAO South Sudan</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">24-Oct-2022</td>
+          <td style="padding:10px 8px;white-space:nowrap">2022-12-23T00:00:00Z</td>
+          <td style="padding:10px 8px"><b>Niger</b><br><small style="color:#6c757d">ouest</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00203197" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquissions de 7.000.000 doses de vaccins contre la Péri Pneumonie Contagieuse des Bovidés (PPCB) et 22.000.000 doses de</a>
+            <br><small style="color:#6c757d">AGRICULTURAL AND LIVESTOCK TRANSFORMATION PROJECT</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, peste des petits ruminants, ppcb, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">03-Oct-2022</td>
+          <td style="padding:10px 8px;white-space:nowrap">17-Oct-2022</td>
+          <td style="padding:10px 8px"><b>Ethiopia</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/183857" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">procurement of Veterinary Supplies and Equipment -Project OSRO/ETH/204/EC & OSRO/ETH/200/USA</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">26-Sep-2022</td>
+          <td style="padding:10px 8px;white-space:nowrap">10-Oct-2022</td>
+          <td style="padding:10px 8px"><b>Ethiopia</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/183330" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">CANCELLED - Procurement of Veterinary Supplies and Equipment - OSRO/ETH/200/USA</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">27-Jul-2022</td>
+          <td style="padding:10px 8px;white-space:nowrap">09-Aug-2022</td>
+          <td style="padding:10px 8px"><b>South Sudan</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/179173" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Invitation to Bid for the supply and delivery of veterinary vaccines</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">01-Apr-2022</td>
+          <td style="padding:10px 8px;white-space:nowrap">10-Apr-2022</td>
+          <td style="padding:10px 8px"><b>Madagascar</b><br><small style="color:#6c757d">australe</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/171597" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Purchase of Foot and Mouth Disease Vaccines for Mauritius - TCP/MAR/3803</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, foot and mouth</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">28-Feb-2022</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Kenya</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00167993" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Procurement of livestock vaccines to support mass livestock disease control sub project</a>
+            <br><small style="color:#6c757d">Kenya Climate Smart Agriculture Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">17-Feb-2022</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Niger</b><br><small style="color:#6c757d">ouest</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00166465" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Fourniture de 7.000.000 de doses de vaccins contre la Peri-Pneumonie Contagieuse des Bovins ( PPCB ) et 22.000.000 de do</a>
+            <br><small style="color:#6c757d">AGRICULTURAL AND LIVESTOCK TRANSFORMATION PROJECT</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, peste des petits ruminants, ppcb, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">21-Jan-2022</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Cameroon</b><br><small style="color:#6c757d">centrale</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00163043" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Fourniture des vaccins concernant l’organisation de la deuxième campagne de vaccination contre la peste des petits rumin</a>
+            <br><small style="color:#6c757d">Livestock Development Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, vaccination, peste des petits ruminants, campagne de vaccination</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">24-Nov-2021</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Cameroon</b><br><small style="color:#6c757d">centrale</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00155459" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Fourniture des vaccins PPR pour la constitution des stock (deux millions de dose)</a>
+            <br><small style="color:#6c757d">Livestock Development Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">2021-11-17</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Mali</b><br><small style="color:#6c757d">ouest</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.dgmp.gouv.ml/sites/default/files/DATA_IN/102865_AAO_306597.docx" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Achat de vaccin contre la fièvre aphteuse (Safaa)</a>
+            <br><small style="color:#6c757d">MINISTERE DE L'ELEVAGE ET DE LA PECHE</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, fièvre aphteuse</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">mali_dgmp</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">11-Nov-2021</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Cameroon</b><br><small style="color:#6c757d">centrale</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00153925" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">FOURNITURE DES VACCINS CONTRE LA PESTE DES PETITS RUMINANTS DANS LE CADRE DU PROJET DE DEVELOPPEMENT DE L’ELEVAGE (PRODE</a>
+            <br><small style="color:#6c757d">Livestock Development Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, peste des petits ruminants</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">10-Nov-2021</td>
+          <td style="padding:10px 8px;white-space:nowrap">22-Nov-2021</td>
+          <td style="padding:10px 8px"><b>South Sudan</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/154839" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Procurement of Veterinary Vaccines to FAO South Sudan</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">28-Oct-2021</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Burkina Faso</b><br><small style="color:#6c757d">ouest</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00152277" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de 6 millions de doses de vaccins contre la PPR</a>
+            <br><small style="color:#6c757d">Burkina Faso Livestock Sector Development Support Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">25-Oct-2021</td>
+          <td style="padding:10px 8px;white-space:nowrap">12-Nov-2021</td>
+          <td style="padding:10px 8px"><b>Burundi</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/151658" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">PPR Vaccines to multiple countries</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">20-Aug-2021</td>
+          <td style="padding:10px 8px;white-space:nowrap">03-Sep-2021</td>
+          <td style="padding:10px 8px"><b>Mozambique</b><br><small style="color:#6c757d">australe</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/140201" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">FAO/MOZ/ITB/21/22-VETERINARY SUPPLIES</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">29-Apr-2021</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00127400" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de 16000 doses de vaccin contre la PPR, 320flacon d'Ivermectine et confection de deux bâches véto didactique</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, vaccination, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">15-Feb-2021</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00117040" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de vaccins contre la péripneumonie contagieuse bovine (PPCB) la peste des petits ruminants (PPR)</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, peste des petits ruminants, ppcb, péripneumonie, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">03-Dec-2020</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00107585" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de vaccins et diluants PPCB et diluants (6000 000 doses)</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, ppcb</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">03-Nov-2020</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Eastern and Southern Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00103647" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Supply and delivery of Vaccine CBPP 2 million doses, PPR 10 Million doses, FMD 500,000 doses</a>
+            <br><small style="color:#6c757d">RI-Regional Pastoral Livelihoods Resilience Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, ppr, cbpp</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">23-Sep-2020</td>
+          <td style="padding:10px 8px;white-space:nowrap">07-Oct-2020</td>
+          <td style="padding:10px 8px"><b>Kenya</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/114656" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">2020/278 - Livestock Vaccines</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">04-Jul-2020</td>
+          <td style="padding:10px 8px;white-space:nowrap">15-Jul-2020</td>
+          <td style="padding:10px 8px"><b>Chad</b><br><small style="color:#6c757d">centrale</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/110539" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Vaccins vétérinaires (veterinary vaccines)   projet: OSRO/CHD/003/CAN</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, vétérinaire, vaccine, veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">01-Jul-2020</td>
+          <td style="padding:10px 8px;white-space:nowrap">16-Jul-2020</td>
+          <td style="padding:10px 8px"><b>South Sudan</b><br><small style="color:#6c757d">est</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/110392" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">PR 120/2020-Supply of Livestock Vaccines for FAO South Sudan.</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">22-Apr-2020</td>
+          <td style="padding:10px 8px;white-space:nowrap">02-May-2020</td>
+          <td style="padding:10px 8px"><b>Chad</b><br><small style="color:#6c757d">centrale</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/107249" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Pour l'achat de vaccins vétérinaires (Procurement of veterinary vaccines)</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, vétérinaire, vaccine, veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">18-Mar-2020</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00086087" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de vaccins (PPCB, PPR et FVR)</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, ppcb, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">18-Mar-2020</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00086085" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de vaccins (PPCB, PPR et FVR)</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, ppcb, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">18-Mar-2020</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00086086" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition de vaccins (PPCB, PPR et FVR)</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, ppcb, ppr</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">23-Jan-2020</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Western and Central Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00083403" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">acquisition de vaccins PPCB et FVR</a>
+            <br><small style="color:#6c757d">Regional Sahel Pastoralism Support Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, ppcb</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">14-Jan-2020</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Eastern and Southern Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00082896" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">supply of Livestock Vaccines as follows: CBPP- 2million doses, CCPP -2million doses, FMD 500,000 doses, PPR 10 Million d</a>
+            <br><small style="color:#6c757d">RI-Regional Pastoral Livelihoods Resilience Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, ppr, cbpp</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">06-Jan-2020</td>
+          <td style="padding:10px 8px;white-space:nowrap">20-Jan-2020</td>
+          <td style="padding:10px 8px"><b>Malawi</b><br><small style="color:#6c757d">australe</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/102219" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">SUPPLY OF 1,500,060 DOSES OF NEWCASTLE DISEASE VACCINES IN VIALS OF 200-300 DOSES</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>newcastle, vaccine</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">22-Nov-2018</td>
+          <td style="padding:10px 8px;white-space:nowrap">28-Nov-2018</td>
+          <td style="padding:10px 8px"><b>Chad</b><br><small style="color:#6c757d">centrale</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://www.ungm.org/Public/Notice/80735" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">ITB#041 - Procurement and Supply of Veterinary Vaccines - Achat de vaccin vétérinaires</a>
+            <br><small style="color:#6c757d">FAO</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, vétérinaire, vaccine, veterinary</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">ungm</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">02-Aug-2018</td>
+          <td style="padding:10px 8px;white-space:nowrap"><span style='color:#aaa;font-style:italic'>Inconnu</span></td>
+          <td style="padding:10px 8px"><b>Cameroon</b><br><small style="color:#6c757d">centrale</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00056280" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Acquisition des vaccins (800 000 doses) et élaboration du guide de bonnes pratiques de vaccination et de prélèvement</a>
+            <br><small style="color:#6c757d">Livestock Development Project</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccin, vaccination</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+        <tr style="border-bottom:1px solid #dee2e6">
+          <td style="padding:10px 8px;white-space:nowrap">27-Nov-2017</td>
+          <td style="padding:10px 8px;white-space:nowrap">2018-01-11T00:00:00Z</td>
+          <td style="padding:10px 8px"><b>Eastern and Southern Africa</b><br><small style="color:#6c757d">régional</small></td>
+          <td style="padding:10px 8px;max-width:400px">
+            <a href="https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00047359" target="_blank" style="color:#0563C1;text-decoration:none;font-weight:500">Supply and delivery of Livestock Vaccines- FMD 1million doses, CBPP 2 Million doses,PPR doses 4 million doses, 2 Million</a>
+            <br><small style="color:#6c757d">MINISTRY OF AGRICULTURE, LIVESTOCK AND FISHERIES</small>
+          </td>
+          <td style="padding:10px 8px"><small>vaccine, ppr, cbpp</small></td>
+          <td style="padding:10px 8px"><span style="background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:11px">banque_mondiale</span></td>
+        </tr>
+  </tbody>
+</table>
+</div>
+
+<script>
+function filtrer() {
+  const q = document.getElementById('search').value.toLowerCase();
+  const src = document.getElementById('sel-source').value;
+  const rows = document.querySelectorAll('#tbody tr');
+  let visible = 0;
+  rows.forEach(r => {
+    const txt = r.textContent.toLowerCase();
+    const ok = (!q || txt.includes(q)) && (!src || txt.includes(src));
+    r.style.display = ok ? '' : 'none';
+    if (ok) visible++;
+  });
+  document.getElementById('count').textContent = visible + ' AO affichées';
+}
+filtrer();
+</script>
+</body>
+</html>

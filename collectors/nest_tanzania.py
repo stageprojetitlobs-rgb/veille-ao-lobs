@@ -6,6 +6,7 @@ Catégories couvertes : G (Goods) et NC (Non-Consultancy supplies)
 robots.txt : pas de restriction sur /gateway/
 """
 import time
+import urllib.parse
 import requests
 
 BASE   = "https://nest.go.tz"
@@ -86,7 +87,13 @@ def collecter():
             if not uuid or uuid in out:
                 continue
             ref = row.get("referenceNumber") or row.get("entityNumber") or uuid
-            lien = f"{BASE}/tenders/tender-details/{uuid}"
+            # NeST est une SPA Angular : l'ID du tender n'apparaît jamais dans l'URL,
+            # il est passé en mémoire lors du clic depuis la liste. On ne peut donc pas
+            # lier directement une page de détail — on pointe vers la liste pré-filtrée
+            # sur entityNumber (referenceNumber inclut un suffixe de lot que la recherche
+            # du site ne matche pas toujours).
+            search_val = row.get("entityNumber") or ref
+            lien = f"{BASE}/tenders/published-tenders?search={urllib.parse.quote(search_val)}"
             titre = row.get("descriptionOfTheProcurement", "")
             organisme = row.get("procuringEntityName", "")
 

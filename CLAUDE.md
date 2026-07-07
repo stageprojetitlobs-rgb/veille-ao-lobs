@@ -28,6 +28,15 @@ Société : Lobs International Health (génériques vétérinaires, marché expo
    HTML réelle AVANT d'écrire un sélecteur. Rate-limiting systématique entre requêtes.
 4. **Rapport écrit après chaque phase, AVANT de passer à la suivante.** Arrêt et attente
    de validation entre chaque nouvelle source explorée — ne jamais enchaîner seul.
+5. **Jamais de lien deviné par pattern.** Le champ `lien` d'un nouveau collecteur doit être
+   testé manuellement (chargement réel de la page, pas juste code 200) avant livraison —
+   les SPA (Angular/React) ne mettent pas toujours l'ID dans l'URL et redirigent
+   silencieusement vers l'accueil (bug vécu sur NeST Tanzania). En complément,
+   `verif_liens.py` vérifie automatiquement à chaque run que les liens des nouvelles AO
+   ne redirigent pas vers la racine du domaine, et log un `[LIEN SUSPECT]` sinon.
+6. **Avant tout déploiement public du site**, lancer `python3 verifier_avant_deploy.py`
+   (scanne TOUS les liens de `ao.json`, pas juste les nouveaux) — sortie non-nulle =
+   ne pas déployer tant que les liens suspects ne sont pas corrigés.
 
 ## Stack
 - `requests` + `BeautifulSoup` — connecteurs API et scraping HTML
