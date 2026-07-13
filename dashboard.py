@@ -73,9 +73,14 @@ def generer(ao_list):
 <style>
   * {{ box-sizing: border-box; margin: 0; padding: 0; }}
   body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f4f6f9; color: #333; }}
-  .header {{ background: #1F4E79; color: #fff; padding: 24px 32px; display:flex; justify-content:space-between; align-items:center; }}
-  .header h1 {{ font-size: 22px; font-weight: 700; }}
-  .header small {{ opacity: .7; font-size: 13px; }}
+  .header {{ background: #fff; color: #1a1a1a; padding: 16px 32px; display:flex; justify-content:space-between; align-items:center; border-bottom: 1px solid #e5e7eb; }}
+  .header-left {{ display:flex; align-items:center; gap:14px; }}
+  .header-left img {{ height: 40px; width: 40px; border-radius: 50%; object-fit: cover; }}
+  .header h1 {{ font-size: 17px; font-weight: 700; color: #1a1a1a; }}
+  .header small {{ font-size: 12px; color: #8a8f98; font-weight: 400; }}
+  .header .badge {{ text-align:right; }}
+  .header .badge .n {{ font-size:24px; font-weight:700; color:#1F4E79; }}
+  .header .badge .l {{ font-size:12px; color:#8a8f98; }}
   .stats {{ display: flex; gap: 16px; padding: 20px 32px; flex-wrap: wrap; }}
   .stat {{ background: #fff; border-radius: 10px; padding: 16px 24px; box-shadow: 0 1px 4px rgba(0,0,0,.08); min-width: 140px; }}
   .stat .n {{ font-size: 32px; font-weight: 700; color: #1F4E79; }}
@@ -94,13 +99,16 @@ def generer(ao_list):
 <body>
 
 <div class="header">
-  <div>
-    <h1>Veille AO Vétérinaires — Lobs International Health</h1>
-    <small>Mise à jour : {now}</small>
+  <div class="header-left">
+    <img src="logo.png" alt="Lobs">
+    <div>
+      <h1>Lobs</h1>
+      <small>Veille AO Vétérinaires — mise à jour {now}</small>
+    </div>
   </div>
-  <div style="text-align:right">
-    <div style="font-size:28px;font-weight:700">{total}</div>
-    <div style="opacity:.7;font-size:13px">AO totales</div>
+  <div class="badge">
+    <div class="n">{total}</div>
+    <div class="l">AO totales</div>
   </div>
 </div>
 
