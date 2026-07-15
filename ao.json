@@ -1,5 +1,28 @@
 [
   {
+    "source": "banque_mondiale",
+    "ext_id": "OP00456659",
+    "pays": "Western and Central Africa",
+    "organisme": "Regional Sahel Pastoralism Support Project II",
+    "titre": "Acquisition des vaccins et diluants PPR et PPCB",
+    "description": "Acquisition des vaccins et diluants PPR et PPCB",
+    "type": "Contract Award",
+    "date_pub": "14-Jul-2026",
+    "date_limite": "",
+    "financement": "Banque Mondiale",
+    "lien": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00456659",
+    "texte_recherche": "regional sahel pastoralism support project ii acquisition des vaccins et diluants ppr et ppcb",
+    "zone": "régional",
+    "id_hash": "ac6495a90c34520f",
+    "score": 60,
+    "mots_cles": [
+      "vaccin",
+      "ppcb",
+      "ppr"
+    ],
+    "date_collecte": "2026-07-15T23:46:16"
+  },
+  {
     "source": "ungm",
     "ext_id": "262972",
     "pays": "Burundi",
