@@ -1,6 +1,28 @@
 [
   {
     "source": "banque_mondiale",
+    "ext_id": "OP00457086",
+    "pays": "Nigeria",
+    "organisme": "Livestock Productivity and Resilience Support Project",
+    "titre": "Procurement of Vaccine Consumables for the 2025 Vaccination Campaign for Enugu State",
+    "description": "Procurement of Vaccine Consumables for the 2025 Vaccination Campaign for Enugu State",
+    "type": "Contract Award",
+    "date_pub": "16-Jul-2026",
+    "date_limite": "",
+    "financement": "Banque Mondiale",
+    "lien": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00457086",
+    "texte_recherche": "livestock productivity and resilience support project procurement of vaccine consumables for the 2025 vaccination campaign for enugu state",
+    "zone": "ouest",
+    "id_hash": "ab08b1cbbc777e06",
+    "score": 60,
+    "mots_cles": [
+      "vaccination",
+      "vaccine"
+    ],
+    "date_collecte": "2026-07-17T22:44:16"
+  },
+  {
+    "source": "banque_mondiale",
     "ext_id": "OP00456659",
     "pays": "Western and Central Africa",
     "organisme": "Regional Sahel Pastoralism Support Project II",
