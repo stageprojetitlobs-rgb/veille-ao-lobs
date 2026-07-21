@@ -1,5 +1,27 @@
 [
   {
+    "source": "banque_mondiale",
+    "ext_id": "OP00457710",
+    "pays": "Nigeria",
+    "organisme": "Livestock Productivity and Resilience Support Project",
+    "titre": "Completion of civil work for the upgrading of vaccine production capacity of the National Veterinary Research Institute (NVRI), Vom, Plateau State.",
+    "description": "Completion of civil work for the upgrading of vaccine production capacity of the National Veterinary Research Institute (NVRI), Vom, Plateau State.",
+    "type": "Contract Award",
+    "date_pub": "20-Jul-2026",
+    "date_limite": "",
+    "financement": "Banque Mondiale",
+    "lien": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00457710",
+    "texte_recherche": "livestock productivity and resilience support project completion of civil work for the upgrading of vaccine production capacity of the national veterinary research institute (nvri), vom, plateau state.",
+    "zone": "ouest",
+    "id_hash": "8755df5c93265f2d",
+    "score": 60,
+    "mots_cles": [
+      "vaccine",
+      "veterinary"
+    ],
+    "date_collecte": "2026-07-21T23:25:21"
+  },
+  {
     "source": "ungm",
     "ext_id": "307857",
     "pays": "Sudan",
