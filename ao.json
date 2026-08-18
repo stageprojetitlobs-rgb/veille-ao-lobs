@@ -1,6 +1,27 @@
 [
   {
     "source": "ungm",
+    "ext_id": "311438",
+    "pays": "Ethiopia",
+    "organisme": "",
+    "titre": "Procurement of Veterinary Drugs- OSRO/ETH/155/CHA",
+    "description": "",
+    "type": "Invitation to bid",
+    "date_pub": "18-Aug-2026",
+    "date_limite": "31-Aug-2026",
+    "financement": "UN",
+    "lien": "https://www.ungm.org/Public/Notice/311438",
+    "texte_recherche": "procurement of veterinary drugs- osro/eth/155/cha ethiopia ",
+    "zone": "est",
+    "id_hash": "0500bd216b980c73",
+    "score": 40,
+    "mots_cles": [
+      "veterinary"
+    ],
+    "date_collecte": "2026-08-18T20:25:42"
+  },
+  {
+    "source": "ungm",
     "ext_id": "309429",
     "pays": "Sudan",
     "organisme": "FAO",
