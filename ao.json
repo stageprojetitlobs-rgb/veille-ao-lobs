@@ -1,6 +1,27 @@
 [
   {
     "source": "ungm",
+    "ext_id": "312867",
+    "pays": "Somalia",
+    "organisme": "FAO",
+    "titre": "Supply and Delivery of CAWHS Kits and Veterinary Drugs in Dhusamareb and Galkacyo North of Galgudud and Mudug, Region - PR 26/103",
+    "description": "",
+    "type": "Request for quotation",
+    "date_pub": "31-Aug-2026",
+    "date_limite": "14-Sep-2026",
+    "financement": "FAO",
+    "lien": "https://www.ungm.org/Public/Notice/312867",
+    "texte_recherche": "supply and delivery of cawhs kits and veterinary drugs in dhusamareb and galkacyo north of galgudud and mudug, region - pr 26/103 somalia fao",
+    "zone": "est",
+    "id_hash": "9246d83f426147eb",
+    "score": 40,
+    "mots_cles": [
+      "veterinary"
+    ],
+    "date_collecte": "2026-08-31T23:41:40"
+  },
+  {
+    "source": "ungm",
     "ext_id": "311438",
     "pays": "Ethiopia",
     "organisme": "",
