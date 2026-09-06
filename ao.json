@@ -1,5 +1,28 @@
 [
   {
+    "source": "banque_mondiale",
+    "ext_id": "OP00467139",
+    "pays": "Western and Central Africa",
+    "organisme": "Regional Sahel Pastoralism Support Project II",
+    "titre": "Confection de 5 000 affiches et 1 000 articles de visibilités du projet (pour la campagne de vaccination) et 700 affiches de communication sur les médicaments vétérinaires, confection de kakémonos sur la C2, kakémonos pour la C5 (sauvegarde) confection de",
+    "description": "Confection de 5 000 affiches et 1 000 articles de visibilités du projet (pour la campagne de vaccination) et 700 affiches de communication sur les médicaments vétérinaires, confection de kakémonos sur la C2, kakémonos pour la C5 (sauvegarde) confection de",
+    "type": "Contract Award",
+    "date_pub": "05-Sep-2026",
+    "date_limite": "",
+    "financement": "Banque Mondiale",
+    "lien": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00467139",
+    "texte_recherche": "regional sahel pastoralism support project ii confection de 5 000 affiches et 1 000 articles de visibilités du projet (pour la campagne de vaccination) et 700 affiches de communication sur les médicaments vétérinaires, confection de kakémonos sur la c2, kakémonos pour la c5 (sauvegarde) confection de",
+    "zone": "régional",
+    "id_hash": "caad968049b0f769",
+    "score": 60,
+    "mots_cles": [
+      "vaccination",
+      "vétérinaire",
+      "campagne de vaccination"
+    ],
+    "date_collecte": "2026-09-06T22:02:42"
+  },
+  {
     "source": "ungm",
     "ext_id": "312867",
     "pays": "Somalia",
