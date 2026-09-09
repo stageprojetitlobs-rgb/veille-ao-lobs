@@ -1,6 +1,48 @@
 [
   {
     "source": "banque_mondiale",
+    "ext_id": "OP00467442",
+    "pays": "Eastern and Southern Africa",
+    "organisme": "Food Systems Resilience Program for Eastern and Southern Africa (Phase 3) FSRP",
+    "titre": "Procurement of Veterinary Drugs",
+    "description": "Procurement of Veterinary Drugs",
+    "type": "Contract Award",
+    "date_pub": "08-Sep-2026",
+    "date_limite": "",
+    "financement": "Banque Mondiale",
+    "lien": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00467442",
+    "texte_recherche": "food systems resilience program for eastern and southern africa (phase 3) fsrp procurement of veterinary drugs",
+    "zone": "régional",
+    "id_hash": "eb7382f69434b7f4",
+    "score": 40,
+    "mots_cles": [
+      "veterinary"
+    ],
+    "date_collecte": "2026-09-09T22:18:20"
+  },
+  {
+    "source": "nest_tanzania",
+    "ext_id": "TR190/2026/2027/G/05-S001",
+    "pays": "Tanzania",
+    "organisme": "NATIONAL RANCHING COMPANY LIMITED",
+    "titre": "Supply of Acaricides",
+    "description": "",
+    "type": "TENDER",
+    "date_pub": "2026-09-08",
+    "date_limite": "2026-09-14",
+    "financement": "GOT",
+    "lien": "https://nest.go.tz/tenders/published-tenders?search=TR190/2026/2027/G/05",
+    "texte_recherche": "supply of acaricides national ranching company limited",
+    "zone": "est",
+    "id_hash": "83612e77af021655",
+    "score": 20,
+    "mots_cles": [
+      "acaricide"
+    ],
+    "date_collecte": "2026-09-09T22:18:20"
+  },
+  {
+    "source": "banque_mondiale",
     "ext_id": "OP00467139",
     "pays": "Western and Central Africa",
     "organisme": "Regional Sahel Pastoralism Support Project II",
