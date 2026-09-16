@@ -1,5 +1,26 @@
 [
   {
+    "source": "nest_tanzania",
+    "ext_id": "TR190/2026/2027/G/04-S002",
+    "pays": "Tanzania",
+    "organisme": "NATIONAL RANCHING COMPANY LIMITED",
+    "titre": "Supply of Veterinary Drugs and Medicine",
+    "description": "",
+    "type": "TENDER",
+    "date_pub": "2026-09-16",
+    "date_limite": "2026-09-23",
+    "financement": "GOT",
+    "lien": "https://nest.go.tz/tenders/published-tenders?search=TR190/2026/2027/G/04",
+    "texte_recherche": "supply of veterinary drugs and medicine national ranching company limited",
+    "zone": "est",
+    "id_hash": "5ebaf0679dde542b",
+    "score": 40,
+    "mots_cles": [
+      "veterinary"
+    ],
+    "date_collecte": "2026-09-16T22:34:26"
+  },
+  {
     "source": "banque_mondiale",
     "ext_id": "OP00467442",
     "pays": "Eastern and Southern Africa",
