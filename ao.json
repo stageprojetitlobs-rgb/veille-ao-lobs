@@ -1,5 +1,71 @@
 [
   {
+    "source": "banque_mondiale",
+    "ext_id": "OP00470990",
+    "pays": "Burkina Faso",
+    "organisme": "Burkina Faso Livestock Resilience and Competitiveness Project",
+    "titre": "Acquisitions de vaccins contre les maladies animales prioritaires pour les campagnes de vaccination de 2025 et 2026 au profit de la DGSV (en 3 lots)",
+    "description": "Acquisitions de vaccins contre les maladies animales prioritaires pour les campagnes de vaccination de 2025 et 2026 au profit de la DGSV (en 3 lots)",
+    "type": "Contract Award",
+    "date_pub": "24-Sep-2026",
+    "date_limite": "",
+    "financement": "Banque Mondiale",
+    "lien": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00470990",
+    "texte_recherche": "burkina faso livestock resilience and competitiveness  project acquisitions de vaccins contre les maladies animales prioritaires pour les campagnes de vaccination de 2025 et 2026 au profit de la dgsv (en 3 lots)",
+    "zone": "ouest",
+    "id_hash": "64da0ce8c12f00fb",
+    "score": 60,
+    "mots_cles": [
+      "vaccin",
+      "vaccination"
+    ],
+    "date_collecte": "2026-09-25T23:02:56"
+  },
+  {
+    "source": "banque_mondiale",
+    "ext_id": "OP00470982",
+    "pays": "Burkina Faso",
+    "organisme": "Burkina Faso Livestock Resilience and Competitiveness Project",
+    "titre": "Acquisitions de vaccins contre les maladies animales prioritaires pour les campagnes de vaccination de 2025 et 2026 au profit de la DGSV (en 3 lots)",
+    "description": "Acquisitions de vaccins contre les maladies animales prioritaires pour les campagnes de vaccination de 2025 et 2026 au profit de la DGSV (en 3 lots)",
+    "type": "Contract Award",
+    "date_pub": "24-Sep-2026",
+    "date_limite": "",
+    "financement": "Banque Mondiale",
+    "lien": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00470982",
+    "texte_recherche": "burkina faso livestock resilience and competitiveness  project acquisitions de vaccins contre les maladies animales prioritaires pour les campagnes de vaccination de 2025 et 2026 au profit de la dgsv (en 3 lots)",
+    "zone": "ouest",
+    "id_hash": "ed6a2416351bd7dc",
+    "score": 60,
+    "mots_cles": [
+      "vaccin",
+      "vaccination"
+    ],
+    "date_collecte": "2026-09-25T23:02:56"
+  },
+  {
+    "source": "banque_mondiale",
+    "ext_id": "OP00470986",
+    "pays": "Burkina Faso",
+    "organisme": "Burkina Faso Livestock Resilience and Competitiveness Project",
+    "titre": "Acquisitions de vaccins contre les maladies animales prioritaires pour les campagnes de vaccination de 2025 et 2026 au profit de la DGSV (en 3 lots)",
+    "description": "Acquisitions de vaccins contre les maladies animales prioritaires pour les campagnes de vaccination de 2025 et 2026 au profit de la DGSV (en 3 lots)",
+    "type": "Contract Award",
+    "date_pub": "24-Sep-2026",
+    "date_limite": "",
+    "financement": "Banque Mondiale",
+    "lien": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00470986",
+    "texte_recherche": "burkina faso livestock resilience and competitiveness  project acquisitions de vaccins contre les maladies animales prioritaires pour les campagnes de vaccination de 2025 et 2026 au profit de la dgsv (en 3 lots)",
+    "zone": "ouest",
+    "id_hash": "5ab3a1def7b503c0",
+    "score": 60,
+    "mots_cles": [
+      "vaccin",
+      "vaccination"
+    ],
+    "date_collecte": "2026-09-25T23:02:56"
+  },
+  {
     "source": "nest_tanzania",
     "ext_id": "TR190/2026/2027/G/04-S002",
     "pays": "Tanzania",
