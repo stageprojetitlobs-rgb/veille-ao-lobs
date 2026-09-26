@@ -1,6 +1,91 @@
 [
   {
     "source": "banque_mondiale",
+    "ext_id": "OP00471306",
+    "pays": "Burkina Faso",
+    "organisme": "Burkina Faso Livestock Resilience and Competitiveness Project",
+    "titre": "Acquisition de 6 500 000 doses de vaccin contre la maladie de Newcastle (MNC) au profit de la DGSV",
+    "description": "Acquisition de 6 500 000 doses de vaccin contre la maladie de Newcastle (MNC) au profit de la DGSV",
+    "type": "Contract Award",
+    "date_pub": "25-Sep-2026",
+    "date_limite": "",
+    "financement": "Banque Mondiale",
+    "lien": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00471306",
+    "texte_recherche": "burkina faso livestock resilience and competitiveness  project acquisition de 6 500 000 doses de vaccin contre la maladie de newcastle (mnc) au profit de la dgsv",
+    "zone": "ouest",
+    "id_hash": "a38ba2c0e3253fca",
+    "score": 60,
+    "mots_cles": [
+      "vaccin",
+      "newcastle"
+    ],
+    "date_collecte": "2026-09-26T22:19:46"
+  },
+  {
+    "source": "banque_mondiale",
+    "ext_id": "OP00471301",
+    "pays": "Burkina Faso",
+    "organisme": "Burkina Faso Livestock Resilience and Competitiveness Project",
+    "titre": "Acquisition de 4 000 000 doses de vaccin contre la variole aviaire (VA) au profit de la DGSV",
+    "description": "Acquisition de 4 000 000 doses de vaccin contre la variole aviaire (VA) au profit de la DGSV",
+    "type": "Contract Award",
+    "date_pub": "25-Sep-2026",
+    "date_limite": "",
+    "financement": "Banque Mondiale",
+    "lien": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00471301",
+    "texte_recherche": "burkina faso livestock resilience and competitiveness  project acquisition de 4 000 000 doses de vaccin contre la variole aviaire (va) au profit de la dgsv",
+    "zone": "ouest",
+    "id_hash": "b07f045b5951fddb",
+    "score": 40,
+    "mots_cles": [
+      "vaccin"
+    ],
+    "date_collecte": "2026-09-26T22:19:46"
+  },
+  {
+    "source": "banque_mondiale",
+    "ext_id": "OP00471332",
+    "pays": "Burkina Faso",
+    "organisme": "Burkina Faso Livestock Resilience and Competitiveness Project",
+    "titre": "Acquisition de 500 kits de vaccination volaille et de 500 kits de vaccination ruminants au profit de la DGSV et du CPAVI (2 lots)",
+    "description": "Acquisition de 500 kits de vaccination volaille et de 500 kits de vaccination ruminants au profit de la DGSV et du CPAVI (2 lots)",
+    "type": "Contract Award",
+    "date_pub": "25-Sep-2026",
+    "date_limite": "",
+    "financement": "Banque Mondiale",
+    "lien": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00471332",
+    "texte_recherche": "burkina faso livestock resilience and competitiveness  project acquisition de 500 kits de vaccination volaille et de 500 kits de vaccination ruminants au profit de la dgsv et du cpavi (2 lots)",
+    "zone": "ouest",
+    "id_hash": "1c5f81e482b709c8",
+    "score": 40,
+    "mots_cles": [
+      "vaccination"
+    ],
+    "date_collecte": "2026-09-26T22:19:46"
+  },
+  {
+    "source": "banque_mondiale",
+    "ext_id": "OP00471333",
+    "pays": "Burkina Faso",
+    "organisme": "Burkina Faso Livestock Resilience and Competitiveness Project",
+    "titre": "Acquisition de 500 kits de vaccination volaille et de 500 kits de vaccination ruminants au profit de la DGSV et du CPAVI (2 lots)",
+    "description": "Acquisition de 500 kits de vaccination volaille et de 500 kits de vaccination ruminants au profit de la DGSV et du CPAVI (2 lots)",
+    "type": "Contract Award",
+    "date_pub": "25-Sep-2026",
+    "date_limite": "",
+    "financement": "Banque Mondiale",
+    "lien": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00471333",
+    "texte_recherche": "burkina faso livestock resilience and competitiveness  project acquisition de 500 kits de vaccination volaille et de 500 kits de vaccination ruminants au profit de la dgsv et du cpavi (2 lots)",
+    "zone": "ouest",
+    "id_hash": "3d167a869ec47c0b",
+    "score": 40,
+    "mots_cles": [
+      "vaccination"
+    ],
+    "date_collecte": "2026-09-26T22:19:46"
+  },
+  {
+    "source": "banque_mondiale",
     "ext_id": "OP00470990",
     "pays": "Burkina Faso",
     "organisme": "Burkina Faso Livestock Resilience and Competitiveness Project",
