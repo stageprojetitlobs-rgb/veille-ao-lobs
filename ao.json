@@ -1,6 +1,28 @@
 [
   {
     "source": "banque_mondiale",
+    "ext_id": "OP00471494",
+    "pays": "Burkina Faso",
+    "organisme": "Burkina Faso Livestock Resilience and Competitiveness Project",
+    "titre": "Acquisition de divers materiels de vaccination (matériels de marquage PPR et thermométres enregistreurs )",
+    "description": "Acquisition de divers materiels de vaccination (matériels de marquage PPR et thermométres enregistreurs )",
+    "type": "Contract Award",
+    "date_pub": "27-Sep-2026",
+    "date_limite": "",
+    "financement": "Banque Mondiale",
+    "lien": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00471494",
+    "texte_recherche": "burkina faso livestock resilience and competitiveness  project acquisition de divers materiels de vaccination (matériels de marquage ppr et thermométres enregistreurs )",
+    "zone": "ouest",
+    "id_hash": "93b7a05b03ce036a",
+    "score": 60,
+    "mots_cles": [
+      "vaccination",
+      "ppr"
+    ],
+    "date_collecte": "2026-09-29T00:07:58"
+  },
+  {
+    "source": "banque_mondiale",
     "ext_id": "OP00471306",
     "pays": "Burkina Faso",
     "organisme": "Burkina Faso Livestock Resilience and Competitiveness Project",
