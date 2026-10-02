@@ -1,6 +1,28 @@
 [
   {
     "source": "banque_mondiale",
+    "ext_id": "OP00472474",
+    "pays": "Western and Central Africa",
+    "organisme": "Regional Sahel Pastoralism Support Project II",
+    "titre": "Acquisition des vaccins PPR (11 Millions de doses) campagne 2026/2027",
+    "description": "Acquisition des vaccins PPR (11 Millions de doses) campagne 2026/2027",
+    "type": "Contract Award",
+    "date_pub": "01-Oct-2026",
+    "date_limite": "",
+    "financement": "Banque Mondiale",
+    "lien": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00472474",
+    "texte_recherche": "regional sahel pastoralism support project ii acquisition des vaccins ppr (11 millions de doses) campagne 2026/2027",
+    "zone": "régional",
+    "id_hash": "854ddb87559d5599",
+    "score": 40,
+    "mots_cles": [
+      "vaccin",
+      "ppr"
+    ],
+    "date_collecte": "2026-10-02T23:30:51"
+  },
+  {
+    "source": "banque_mondiale",
     "ext_id": "OP00471494",
     "pays": "Burkina Faso",
     "organisme": "Burkina Faso Livestock Resilience and Competitiveness Project",
