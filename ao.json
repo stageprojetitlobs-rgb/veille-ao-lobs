@@ -1,6 +1,75 @@
 [
   {
     "source": "banque_mondiale",
+    "ext_id": "OP00474834",
+    "pays": "Western and Central Africa",
+    "organisme": "WEST AFRICA FOOD SYSTEM RESILIENCE PROGRAM (FSRP) PHASE 3",
+    "titre": "Acquisition de vaccins (fièvre aphteuse, vallée du rift et maladie de newcastle)",
+    "description": "Acquisition de vaccins (fièvre aphteuse, vallée du rift et maladie de newcastle)",
+    "type": "Contract Award",
+    "date_pub": "13-Oct-2026",
+    "date_limite": "",
+    "financement": "Banque Mondiale",
+    "lien": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00474834",
+    "texte_recherche": "west africa food system resilience program (fsrp) phase 3 acquisition de vaccins (fièvre aphteuse, vallée du rift et maladie de newcastle)",
+    "zone": "régional",
+    "id_hash": "b1f11bd2701cfb1a",
+    "score": 60,
+    "mots_cles": [
+      "vaccin",
+      "fièvre aphteuse",
+      "newcastle"
+    ],
+    "date_collecte": "2026-10-14T22:57:25"
+  },
+  {
+    "source": "banque_mondiale",
+    "ext_id": "OP00474836",
+    "pays": "Western and Central Africa",
+    "organisme": "WEST AFRICA FOOD SYSTEM RESILIENCE PROGRAM (FSRP) PHASE 3",
+    "titre": "Acquisition de vaccins (fièvre aphteuse, vallée du rift et maladie de newcastle)",
+    "description": "Acquisition de vaccins (fièvre aphteuse, vallée du rift et maladie de newcastle)",
+    "type": "Contract Award",
+    "date_pub": "13-Oct-2026",
+    "date_limite": "",
+    "financement": "Banque Mondiale",
+    "lien": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00474836",
+    "texte_recherche": "west africa food system resilience program (fsrp) phase 3 acquisition de vaccins (fièvre aphteuse, vallée du rift et maladie de newcastle)",
+    "zone": "régional",
+    "id_hash": "fc7693966d753036",
+    "score": 60,
+    "mots_cles": [
+      "vaccin",
+      "fièvre aphteuse",
+      "newcastle"
+    ],
+    "date_collecte": "2026-10-14T22:57:25"
+  },
+  {
+    "source": "banque_mondiale",
+    "ext_id": "OP00474840",
+    "pays": "Western and Central Africa",
+    "organisme": "WEST AFRICA FOOD SYSTEM RESILIENCE PROGRAM (FSRP) PHASE 3",
+    "titre": "Acquisition de vaccins (fièvre aphteuse, vallée du rift et maladie de newcastle)",
+    "description": "Acquisition de vaccins (fièvre aphteuse, vallée du rift et maladie de newcastle)",
+    "type": "Contract Award",
+    "date_pub": "13-Oct-2026",
+    "date_limite": "",
+    "financement": "Banque Mondiale",
+    "lien": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00474840",
+    "texte_recherche": "west africa food system resilience program (fsrp) phase 3 acquisition de vaccins (fièvre aphteuse, vallée du rift et maladie de newcastle)",
+    "zone": "régional",
+    "id_hash": "6838f6f330eb223d",
+    "score": 60,
+    "mots_cles": [
+      "vaccin",
+      "fièvre aphteuse",
+      "newcastle"
+    ],
+    "date_collecte": "2026-10-14T22:57:25"
+  },
+  {
+    "source": "banque_mondiale",
     "ext_id": "OP00472474",
     "pays": "Western and Central Africa",
     "organisme": "Regional Sahel Pastoralism Support Project II",
