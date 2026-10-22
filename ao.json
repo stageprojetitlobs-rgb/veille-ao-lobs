@@ -1,6 +1,27 @@
 [
   {
     "source": "banque_mondiale",
+    "ext_id": "OP00476497",
+    "pays": "Eastern and Southern Africa",
+    "organisme": "Food Systems Resilience Program for Eastern and Southern Africa (Phase 3) FSRP",
+    "titre": "Procurement of veterinary medical drugs for livestock treatment in Galmudug State.",
+    "description": "Procurement of veterinary medical drugs for livestock treatment in Galmudug State.",
+    "type": "Contract Award",
+    "date_pub": "21-Oct-2026",
+    "date_limite": "",
+    "financement": "Banque Mondiale",
+    "lien": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00476497",
+    "texte_recherche": "food systems resilience program for eastern and southern africa (phase 3) fsrp procurement of veterinary medical drugs for livestock treatment in galmudug state.",
+    "zone": "régional",
+    "id_hash": "da298a62141961d1",
+    "score": 40,
+    "mots_cles": [
+      "veterinary"
+    ],
+    "date_collecte": "2026-10-22T22:56:45"
+  },
+  {
+    "source": "banque_mondiale",
     "ext_id": "OP00474834",
     "pays": "Western and Central Africa",
     "organisme": "WEST AFRICA FOOD SYSTEM RESILIENCE PROGRAM (FSRP) PHASE 3",
