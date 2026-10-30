@@ -1,6 +1,27 @@
 [
   {
     "source": "banque_mondiale",
+    "ext_id": "OP00478040",
+    "pays": "Eastern and Southern Africa",
+    "organisme": "Food Systems Resilience Program for Eastern and Southern Africa (Phase 3) FSRP",
+    "titre": "SUPPLY AND DELIVERY OF ASSORTED VETERINARY DRUGS.",
+    "description": "SUPPLY AND DELIVERY OF ASSORTED VETERINARY DRUGS.",
+    "type": "Contract Award",
+    "date_pub": "29-Oct-2026",
+    "date_limite": "",
+    "financement": "Banque Mondiale",
+    "lien": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478040",
+    "texte_recherche": "food systems resilience program for eastern and southern africa (phase 3) fsrp supply and delivery of assorted veterinary drugs.",
+    "zone": "régional",
+    "id_hash": "19435f3aefca7ee6",
+    "score": 40,
+    "mots_cles": [
+      "veterinary"
+    ],
+    "date_collecte": "2026-10-30T23:27:05"
+  },
+  {
+    "source": "banque_mondiale",
     "ext_id": "OP00476497",
     "pays": "Eastern and Southern Africa",
     "organisme": "Food Systems Resilience Program for Eastern and Southern Africa (Phase 3) FSRP",
