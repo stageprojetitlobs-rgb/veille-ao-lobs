@@ -1,6 +1,28 @@
 [
   {
     "source": "banque_mondiale",
+    "ext_id": "OP00478684",
+    "pays": "Eastern and Southern Africa",
+    "organisme": "Food Systems Resilience Program for Eastern and Southern Africa (Phase 3) FSRP",
+    "titre": "Supply and delivery of 336, 260 doses of Lumpy Skin Diseases, 243, 650 doses of contagious caprine pleuro pneumonia vaccines and related items.",
+    "description": "Supply and delivery of 336, 260 doses of Lumpy Skin Diseases, 243, 650 doses of contagious caprine pleuro pneumonia vaccines and related items.",
+    "type": "Contract Award",
+    "date_pub": "02-Nov-2026",
+    "date_limite": "",
+    "financement": "Banque Mondiale",
+    "lien": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478684",
+    "texte_recherche": "food systems resilience program for eastern and southern africa (phase 3) fsrp supply and delivery of 336, 260 doses of lumpy skin diseases, 243, 650 doses of contagious caprine pleuro pneumonia vaccines and related items.",
+    "zone": "régional",
+    "id_hash": "d34a27d85455c6f4",
+    "score": 40,
+    "mots_cles": [
+      "vaccine",
+      "lumpy skin disease"
+    ],
+    "date_collecte": "2026-11-04T00:20:53"
+  },
+  {
+    "source": "banque_mondiale",
     "ext_id": "OP00478040",
     "pays": "Eastern and Southern Africa",
     "organisme": "Food Systems Resilience Program for Eastern and Southern Africa (Phase 3) FSRP",
