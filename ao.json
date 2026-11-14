@@ -1,6 +1,29 @@
 [
   {
     "source": "banque_mondiale",
+    "ext_id": "OP00481295",
+    "pays": "Eastern and Southern Africa",
+    "organisme": "Food Systems Resilience Program for Eastern and Southern Africa - Madagascar",
+    "titre": "Acquisition de kits et produits biologiques vétérinaires de diagnostic, dépistage et prophylaxie: Lot 1: Kits de dépistage de la tuberculose Lot 2: Vaccins tuberculeux Lot 3: Kits de prélèvement Brucellose Lot 4: Kits de tests d’anticorps et de sérologie",
+    "description": "Acquisition de kits et produits biologiques vétérinaires de diagnostic, dépistage et prophylaxie: Lot 1: Kits de dépistage de la tuberculose Lot 2: Vaccins tuberculeux Lot 3: Kits de prélèvement Brucellose Lot 4: Kits de tests d’anticorps et de sérologie",
+    "type": "Invitation for Bids",
+    "date_pub": "12-Nov-2026",
+    "date_limite": "2026-12-14T00:00:00Z",
+    "financement": "Banque Mondiale",
+    "lien": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00481295",
+    "texte_recherche": "food systems resilience program for eastern and southern africa acquisition de kits et produits biologiques vétérinaires de diagnostic, dépistage et prophylaxie: lot 1: kits de dépistage de la tuberculose lot 2: vaccins tuberculeux lot 3: kits de prélèvement brucellose lot 4: kits de tests d’anticorps et de sérologie",
+    "zone": "régional",
+    "id_hash": "f9c9104d272e0654",
+    "score": 60,
+    "mots_cles": [
+      "vaccin",
+      "vétérinaire",
+      "brucellose"
+    ],
+    "date_collecte": "2026-11-14T00:37:50"
+  },
+  {
+    "source": "banque_mondiale",
     "ext_id": "OP00478684",
     "pays": "Eastern and Southern Africa",
     "organisme": "Food Systems Resilience Program for Eastern and Southern Africa (Phase 3) FSRP",
